@@ -17,14 +17,17 @@ Whether you're here to report an issue, improve the code, or suggest features �
 ## ✅ Ways to Contribute
 
 ### 🐞 Report Issues
+
 - Use the [GitHub Issues](https://github.com/MohamedAAbdallah/Egyptian-ID-Validator-Npm/issues) section.
 - Include a clear title, environment (Node.js version), expected vs actual behavior, and sample ID (if applicable).
 
 ### 💡 Suggest Enhancements
+
 - Focus on usability improvements, compatibility, or language parity with other versions (e.g., Python).
 - For ideas like REST APIs or GUI clients, refer them to the [main repo](https://github.com/MohamedAAbdallah/Egyptian-ID-Validator).
 
 ### 🛠 Submit Code
+
 1. Fork the repo
 2. Create a new branch:  
    `git checkout -b feature/your-feature-name`
@@ -42,6 +45,7 @@ By contributing, you agree that your code will be licensed under the repository�
 [custom MIT-based license with commercial use restrictions](LICENSE.md).
 
 This license:
+
 - ✅ Allows usage and integration into commercial apps with attribution
 - 🚫 Prohibits resale or monetization as a core product without permission
 
