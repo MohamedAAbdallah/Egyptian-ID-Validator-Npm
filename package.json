@@ -1,6 +1,6 @@
 {
   "name": "egyptian-id-validator",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Validate and parse Egyptian National ID numbers (Node.js)",
   "main": "src/index.js",
   "type": "module",
