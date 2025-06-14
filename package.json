@@ -1,0 +1,35 @@
+{
+  "name": "egyptian-id-validator",
+  "version": "0.0.0",
+  "description": "Validate and parse Egyptian National ID numbers (Node.js)",
+  "main": "src/index.js",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "scripts": {
+    "test": "vitest run"
+  },
+  "keywords": [
+    "egypt",
+    "national-id",
+    "validator",
+    "citizen-id"
+  ],
+  "author": "Mohamed A. Abdallah",
+  "license": "LicenseRef-MIT-Custom",
+  "files": [
+    "src"
+  ],
+  "devDependencies": {
+    "@eslint/js": "^9.29.0",
+    "eslint": "^8.57.1",
+    "globals": "^16.2.0",
+    "prettier": "^3.0.0",
+    "typescript-eslint": "^8.34.0",
+    "vitest": "^3.2.3"
+  },
+  "directories": {
+    "test": "test"
+  }
+}
