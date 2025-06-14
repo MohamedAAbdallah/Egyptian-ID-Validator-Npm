@@ -34,8 +34,8 @@ All validation logic adheres to official specifications.
 
 Contributions are welcome, especially for:
 
-* Bug reports
-* Feature suggestions
+- Bug reports
+- Feature suggestions
 
 Please use [Issues](https://github.com/MohamedAAbdallah/Egyptian-ID-Validator-Npm/issues) and [Pull Requests](https://github.com/MohamedAAbdallah/Egyptian-ID-Validator-Npm/pulls).
 

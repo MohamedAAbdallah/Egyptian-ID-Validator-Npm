@@ -11,6 +11,7 @@ to the following conditions:
 ### 1. Attribution Required
 
 You must provide clear and visible credit to the original author. This includes:
+
 - Referencing the author's full name (Mohamed A. Abdallah)
 - Including a link to the original GitHub repository in documentation or product credits
 - Indicating any modifications made, if applicable
@@ -28,6 +29,7 @@ The following actions are **not permitted** under this license:
 - Using the Software as the **primary logic**, **core functionality**, or **revenue-generating feature** of any commercial product, service, or platform without prior written permission from the author
 
 Examples of prohibited uses:
+
 - Creating an API service based on this Software and charging users
 - Packaging this Software into a paid SDK or commercial development toolkit
 - Using it as the main data processor in a SaaS platform
@@ -37,6 +39,7 @@ Examples of prohibited uses:
 ### 3. Permitted Commercial Use (With Conditions)
 
 You may use this Software in commercial applications if all of the following are true:
+
 - The Software is not the main source of value or functionality
 - You do not directly monetize the Software or its output
 - You provide visible attribution as described in Section 1
