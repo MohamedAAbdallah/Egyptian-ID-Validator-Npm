@@ -1,7 +1,9 @@
 # Egyptian ID Validator (JavaScript / Node.js)
 
-[![License](https://img.shields.io/badge/license-MIT--Custom-blue)](LICENSE.md)
+[![Version](https://img.shields.io/npm/v/egyptian-id-validator)](https://www.npmjs.com/package/egyptian-id-validator)
 [![CodeFactor](https://www.codefactor.io/repository/github/mohamedaabdallah/egyptian-id-validator-npm/badge)](https://www.codefactor.io/repository/github/mohamedaabdallah/egyptian-id-validator-npm)
+[![License](https://img.shields.io/badge/license-MIT--Custom-blue)](LICENSE.md)
+
 
 ---
 
