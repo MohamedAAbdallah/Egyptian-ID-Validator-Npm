@@ -1,3 +1,5 @@
+/* global process */
+
 import { describe, it, expect } from "vitest";
 import { validate } from "../src/index.js";
 import "dotenv/config";
