@@ -1,7 +1,16 @@
 {
   "name": "egyptian-id-validator",
-  "version": "0.1.5",
   "description": "Validate and parse Egyptian National ID numbers (Node.js)",
+  "version": "0.1.5",
+  "author": "Mohamed A. Abdallah <eng.mohamed.a.abdallah@gmail.com> (https://github.com/MohamedAAbdallah)",
+  "homepage": "https://github.com/MohamedAAbdallah/Egyptian-ID-Validator",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MohamedAAbdallah/Egyptian-ID-Validator-Npm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MohamedAAbdallah/Egyptian-ID-Validator-Npm/issues"
+  },
   "main": "src/index.js",
   "type": "module",
   "exports": {
@@ -12,11 +21,18 @@
   },
   "keywords": [
     "egypt",
+    "egyptian",
     "national-id",
+    "citizen-id",
     "validator",
-    "citizen-id"
+    "validation",
+    "identity",
+    "government-id",
+    "id-checker",
+    "personal-id",
+    "egyptian-id",
+    "identity-verification"
   ],
-  "author": "Mohamed A. Abdallah",
   "license": "LicenseRef-MIT-Custom",
   "files": [
     "src"
