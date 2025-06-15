@@ -28,35 +28,96 @@ It enforces the official structural rules defined by the Egyptian Ministry of In
 
 ---
 
+## 📦 Installation
+
+Install via npm:
+
+```bash
+npm install egyptian-id-validator
+````
+
+> Requires Node.js ≥ 14
+
+---
+
+## 🚀 Quick Usage
+
+```js
+import { validate } from "egyptian-id-validator";
+
+const id = "29805150102054"; // Replace with your ID
+const result = validate(id);
+
+if (result) {
+  console.log("✅ Valid ID");
+  console.log(result); // { valid: true, year, month, day, governorate, gender }
+} else {
+  console.log("❌ Invalid ID");
+}
+```
+
+You can also use this in CommonJS projects:
+
+```js
+const { validate } = require("egyptian-id-validator");
+```
+
+---
+
 ## 📁 Project Status
 
-This package is currently in the **planning** phase.
-All validation logic adheres to official specifications.
+This package is **stable** and actively maintained.
+It is being used in production environments and adheres strictly to the official Egyptian national ID structure, including a private and verified checksum algorithm.
+
+> 🔒 The checksum logic is intentionally obfuscated to comply with national data validation practices and prevent misuse.
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome, especially for:
+We welcome contributions to improve or extend this project.
 
-- Bug reports
-- Feature suggestions
+### 🐞 Bug Reports
 
-Please use [Issues](https://github.com/MohamedAAbdallah/Egyptian-ID-Validator-Npm/issues) and [Pull Requests](https://github.com/MohamedAAbdallah/Egyptian-ID-Validator-Npm/pulls).
+Please submit detailed reports via [GitHub Issues](https://github.com/MohamedAAbdallah/Egyptian-ID-Validator-Npm/issues), including:
+
+* Clear title and description
+* ID sample (if safe to share)
+* Expected vs. actual result
+
+### 💡 Feature Requests
+
+Open an issue to suggest enhancements that support practical developer needs, especially around usability, edge cases, or new environments.
+
+### 🧪 Code Contributions
+
+1. Fork this repository
+2. Create a branch: `git checkout -b feature/your-feature`
+3. Make your changes with tests
+4. Run `npm test` and lint if needed
+5. Commit and push: `git commit -m "Describe feature"` → `git push origin feature/your-feature`
+6. Open a Pull Request to `main`
 
 ---
 
 ## 📄 License
 
 This project is licensed under a **custom MIT-based license with commercial use restrictions**.
-You may use and modify the package in commercial apps with attribution, but **resale or monetization as core functionality is prohibited**.
 
-See [LICENSE.md](LICENSE.md) for full details.
+You **may**:
+
+* Use the package in personal or commercial apps
+* Modify and extend it with proper attribution
+
+You **may not**:
+
+* Resell, redistribute, or package this code as a core business product without explicit written permission
+
+See [LICENSE.md](LICENSE.md) for full terms.
 
 ---
 
 ## 👤 Author
 
 **Mohamed A. Abdallah**
-
-[GitHub](https://github.com/MohamedAAbdallah) | [Email](mailto:eng.mohamed.a.abdallah@gmail.com)
+[GitHub](https://github.com/MohamedAAbdallah) · [Email](mailto:eng.mohamed.a.abdallah@gmail.com)
