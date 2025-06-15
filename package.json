@@ -1,7 +1,7 @@
 {
   "name": "egyptian-id-validator",
   "description": "Validate and parse Egyptian National ID numbers (Node.js)",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "author": "Mohamed A. Abdallah <eng.mohamed.a.abdallah@gmail.com> (https://github.com/MohamedAAbdallah)",
   "homepage": "https://github.com/MohamedAAbdallah/Egyptian-ID-Validator",
   "repository": {
