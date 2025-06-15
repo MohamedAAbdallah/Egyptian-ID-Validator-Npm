@@ -49,6 +49,7 @@ jobs:
 
       - name: Get package version
         id: version
+        shell: bash
         run: |
           VERSION=$(npm pkg get version | tr -d '"')
           echo "version=$VERSION" >> "$GITHUB_OUTPUT"
