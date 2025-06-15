@@ -34,6 +34,10 @@ jobs:
       contents: write
       packages: write
 
+    env:
+      NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -47,30 +51,23 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Get package version
-        id: version
-        shell: bash
+      - name: Export version from package.json
+        id: export_version
         run: |
-          VERSION=$(npm pkg get version | tr -d '"')
-          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+          echo "VERSION=$(npm pkg get version | tr -d '\"')" >> $GITHUB_ENV
 
       - name: Create tarball
         run: npm pack
-        id: pack
 
       - name: Publish to npm
         run: npm publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: v${{ steps.version.outputs.version }}
-          name: Release v${{ steps.version.outputs.version }}
+          tag_name: v${{ env.VERSION }}
+          name: Release v${{ env.VERSION }}
           body: |
-            Release of version v${{ steps.version.outputs.version }}.
+            Release of version v${{ env.VERSION }}.
           files: |
             *.tgz
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
