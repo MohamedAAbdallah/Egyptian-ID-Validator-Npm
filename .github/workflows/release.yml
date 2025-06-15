@@ -1,4 +1,4 @@
-name: 🚀 Release and Publish
+name: Release and Publish
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
 
 jobs:
   test:
-    name: ✅ Run Tests
+    name: Run Tests
     runs-on: ubuntu-latest
 
     steps:
@@ -27,7 +27,7 @@ jobs:
           TEST_ID_1: ${{ secrets.TEST_ID_1 }}
 
   release:
-    name: 📦 Publish to npm & GitHub
+    name: Publish to npm & GitHub
     needs: test
     runs-on: ubuntu-latest
     permissions:
