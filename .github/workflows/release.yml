@@ -50,7 +50,7 @@ jobs:
       - name: Get package version
         id: version
         run: |
-          echo "version=$(node -p 'require(\"./package.json\").version')" >> $GITHUB_OUTPUT
+          echo "version=$(node -p 'require(\"./package.json\").version')" >> "$GITHUB_OUTPUT"
 
       - name: Create tarball
         run: npm pack
